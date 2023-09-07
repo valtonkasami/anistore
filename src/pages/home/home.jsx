@@ -113,7 +113,7 @@ export const Home = () => {
             <div className='drop-shadow-xl max-sm:w-[350px] max-sm:h-[370px] w-[500px] h-[302px] bg-[#444444] rounded-[20px]'>
                 <div className='mx-12 max-sm:mx-8 mt-10'>
                     <h1 className='font-sans font-medium text-2xl'>
-                    "As a huge Anime Fan I'm glad that i can have Figurines from my Favorite Characters, the figurines are so realistic i love them."
+                    "As a huge Anime Fan I'm glad that i can have Figurines from my Favorite Characters, the figurines are so realistic i really love them alot."
                     </h1>
                     <div className='flex items-center'>
                 <img className='border-[3px] border-[orange] h-[70px] rounded-full mt-[30px]' alt='girl' src={girl}/>
