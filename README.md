@@ -1,3 +1,7 @@
+- Valton Kasami
+
+👉 Live Demo: https://anistore.vercel.app/
+
 As the sole developer, I conceived, designed, and implemented this project from the ground up. Originally envisioned as a full-stack endeavor, I pivoted to focus on the front end due to the absence of products to sell, yet this decision allowed me to channel my creativity and adaptability into crafting a unique Anime Figurine Ecommerce platform.
 
 Every element of this project was meticulously designed to align seamlessly with its theme, ensuring a harmonious visual and functional experience throughout. One of the project's standout features is the shopping cart integrated into the navbar. When clicked, it elegantly slides into view, creating a focused shopping cart environment against a darkened backdrop. Even the smallest details were carefully considered, such as the automatic cart dismissal upon background click.
@@ -9,5 +13,3 @@ Also in the shop sections, a thoughtful addition allows users to add products to
 By employing responsive design techniques, I ensured that the Anime Figurine Ecommerce platform adapts effortlessly to varying screen sizes. This commitment guarantees that users can explore our website with ease and enjoy its visual appeal, functionality, and usability, regardless of the device they choose.
 
 This project not only showcases my technical expertise but also highlights my dedication to user-centric design and the ability to adapt creatively to project constraints. It serves as a testament to my commitment to delivering exceptional and innovative solutions.
-
-- Valton Kasami
