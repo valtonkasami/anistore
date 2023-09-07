@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+As the sole developer, I conceived, designed, and implemented this project from the ground up. Originally envisioned as a full-stack endeavor, I pivoted to focus on the front end due to the absence of products to sell, yet this decision allowed me to channel my creativity and adaptability into crafting a unique Anime Figurine Ecommerce platform.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Every element of this project was meticulously designed to align seamlessly with its theme, ensuring a harmonious visual and functional experience throughout. One of the project's standout features is the shopping cart integrated into the navbar. When clicked, it elegantly slides into view, creating a focused shopping cart environment against a darkened backdrop. Even the smallest details were carefully considered, such as the automatic cart dismissal upon background click.
 
-## Available Scripts
+Within the shopping cart, complex functionalities were implemented using Redux state management, enhancing the user experience, and using Redux Persist I successfully achieved state persistence on the client side, guaranteeing that whenever a user returns to the platform, their shopping cart remains in the exact state they left it.
 
-In the project directory, you can run:
+Also in the shop sections, a thoughtful addition allows users to add products to their cart directly from product widgets, eliminating the need to navigate to individual product pages. Clicking the cart button accomplishes this seamlessly, while users interested in more information can still access product details, images, and descriptions on the dedicated product page where you can also add the single product to cart in any quantity that you would like.
 
-### `npm start`
+By employing responsive design techniques, I ensured that the Anime Figurine Ecommerce platform adapts effortlessly to varying screen sizes. This commitment guarantees that users can explore our website with ease and enjoy its visual appeal, functionality, and usability, regardless of the device they choose.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project not only showcases my technical expertise but also highlights my dedication to user-centric design and the ability to adapt creatively to project constraints. It serves as a testament to my commitment to delivering exceptional and innovative solutions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Valton Kasami
