@@ -131,12 +131,12 @@ export const Home = () => {
         
 
 
-        <div className='h-[440px] max-sm:h-[380px] bg-[#444444] max-sm:rounded-t-[60px] mt-20 rounded-t-[100px] flex flex-col items-center'>
+        <div className='h-[410px] max-sm:h-[380px] bg-[#444444] max-sm:rounded-t-[60px] mt-20 rounded-t-[100px] flex flex-col items-center'>
             <h1 className='max-sm:text-4xl text-center text-5xl pt-10 mb-10'>
                 Feeling Convinced Yet?<br/>
                 <span className='max-sm:text-[29px]'>Choose Your Favorite Figurine!</span>
             </h1>
-            <a href="/shop"><button className='border-4 border-[white] hover:border-[#e0ca00] drop-shadow transition ease-in-out delay-50 hover:scale-110 hover:bg-[white] hover:text-[#e0ca00] focus:outline-none  focus:ring focus:ring-[white] bg-[orange] text-[white] text-8xl py-2 px-7 max-sm:text-6xl rounded-full'>Choose Now</button></a>
+            <a href="/shop"><button className='border-4 border-[white] hover:border-[#e0ca00] drop-shadow transition ease-in-out delay-50 hover:scale-110 hover:bg-[white] hover:text-[#e0ca00] focus:outline-none  focus:ring focus:ring-[white] bg-[orange] text-[white] text-7xl py-2 px-7 max-sm:text-6xl rounded-full'>Choose Now</button></a>
             <h1 className='text-5xl text-[#888888] mt-12 hover:text-[orange] cursor-pointer'>AniStore</h1>
         </div>
         </div>
