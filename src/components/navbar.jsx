@@ -74,7 +74,7 @@ export const Navbar = () => {
             </div>
             <button onClick={() => {dispatch(setCartClick())}} className='border-solid border-[4px] border-[white] transition ease-in-out delay-50 hover:scale-110 focus:outline-none focus:ring focus:ring-[orange] text-3xl bg-[orange] h-[60px] w-[280px] rounded-full'>Continue Browsing</button>
            </div>}
-       {visibility && <div className='w-[510px h-[70vh] max-sm:h-[60vh] overflow-y-auto flex flex-col items-center'>
+       {visibility && <div className='w-[510px h-[70vh] max-sm:h-[65vh] overflow-y-auto flex flex-col items-center'>
         {products.map((product) => (
             <div key={product.id} className='bg-[white] border-solid border-4 max-sm:border-[orange] border-[silver] mb-[20px] max-sm:pb-3 w-[440px] rounded-[15px] flex max-sm:w-[330px] max-sm:h-[480px] max-sm:flex-col max-sm:items-center '>
                 <div className='sm:bg-[silver] sm:rounded-l-[15px]'>
