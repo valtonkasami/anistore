@@ -7,7 +7,7 @@ import { setVisibility } from '../../features/redux';
 import { addProduct } from '../../features/redux';
 
 export const Product =  (props) => {
-    const {amount, id, route, name, title, price, description, image1} = props.data
+    const {amount, id, route, title, price, image1} = props.data
     const dispatch = useDispatch();
 
 
@@ -24,7 +24,7 @@ export const Product =  (props) => {
   return (
     <div onClick={handleDivClick} className='cursor-pointer border-solid border-4 border-[silver] hover:border-[orange] h-[410px] w-[290px] bg-[white] rounded-[30px] text-[black]'>
         <div className='flex flex-col items-center'>
-        <img src={image1} className='border-solid border-2 border-[silver] mt-[13px] w-[260px] h-[260px] rounded-[30px] overflow-hidden'/>
+        <img alt='img1' src={image1} className='border-solid border-2 border-[silver] mt-[13px] w-[260px] h-[260px] rounded-[30px] overflow-hidden'/>
         </div>
         <div className='pt-3'><p className='ml-[10px] font-sans font-[500] text-[#777777] tracking-wide text-[15px]'>anistore</p></div>
         <div className='ml-[10px] text-[20px]'>{title}</div>

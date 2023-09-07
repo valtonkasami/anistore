@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import {PRODUCTS2} from '../../products2'
 import {Product} from './product'

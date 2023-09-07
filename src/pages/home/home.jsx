@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import narutoImage from '../../img/home/naruto.png';
 import benzema from '../../img/home/benzema.jpg';
 import girl from '../../img/home/p6.jpeg';
@@ -31,7 +31,7 @@ export const Home = () => {
             </div>
             <div className='max-sm:w-[300px] max-sm:h-[300px] max-ipad:mb-[80px] drop-shadow flex justify-center items-center bg-[#e0ca00] w-[500px] h-[500px] rounded-full'>
             <div className='max-sm:w-[220px] max-sm:h-[220px] bg-[#222222] w-[380px] h-[380px] rounded-full flex justify-center items-center'>
-            <img className='drop-shadow-2xl pr-[30px] max-sm:h-[400px] h-[600px]' src={narutoImage} />
+            <img className='drop-shadow-2xl pr-[30px] max-sm:h-[400px] h-[600px]' src={narutoImage} alt='naruto'/>
             </div>
             </div>
         </div>
@@ -98,7 +98,7 @@ export const Home = () => {
                     "I bought some Figurines for my kids and had an amazing experience! The website was pretty and the Figurines were very high quality. "
                     </h1>
                     <div className='flex items-center'>
-                <img className='border-[3px] border-[orange] h-[70px] rounded-full mt-[30px]' src={benzema}/>
+                <img className='border-[3px] border-[orange] h-[70px] rounded-full mt-[30px]' alt='benzema' src={benzema}/>
                     <div className='flex items-center'>
                     <div className='pt-8 ml-5'>
                         <h1 className='text-2xl'>Karim Benzema</h1>
@@ -116,7 +116,7 @@ export const Home = () => {
                     "As a huge Anime Fan I'm glad that i can have Figurines from my Favorite Characters, the figurines are so realistic i love them."
                     </h1>
                     <div className='flex items-center'>
-                <img className='border-[3px] border-[orange] h-[70px] rounded-full mt-[30px]' src={girl}/>
+                <img className='border-[3px] border-[orange] h-[70px] rounded-full mt-[30px]' alt='girl' src={girl}/>
                     <div className='flex items-center'>
                     <div className='pt-8 ml-5'>
                         <h1 className='text-2xl'>Ariana Greenblatt</h1>

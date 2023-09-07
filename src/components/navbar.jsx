@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
@@ -69,7 +69,7 @@ export const Navbar = () => {
         </div>
         { visibility2 && <div className='flex flex-col items-center'>
         <div className='flex flex-col items-center justify-center mt-[50px] mb-[40px]'>
-            <img className='w-[300px]' src={cart} />
+            <img alt='cart' className='w-[300px]' src={cart} />
             <h1 className='mb-[0px] text-2xl'>Your cart is empty</h1>
             </div>
             <button onClick={() => {dispatch(setCartClick())}} className='border-solid border-[4px] border-[white] transition ease-in-out delay-50 hover:scale-110 focus:outline-none focus:ring focus:ring-[orange] text-3xl bg-[orange] h-[60px] w-[280px] rounded-full'>Continue Browsing</button>
@@ -78,7 +78,7 @@ export const Navbar = () => {
         {products.map((product) => (
             <div key={product.id} className='bg-[white] border-solid border-4 max-sm:border-[orange] border-[silver] mb-[20px] max-sm:pb-3 w-[440px] rounded-[15px] flex max-sm:w-[330px] max-sm:h-[480px] max-sm:flex-col max-sm:items-center '>
                 <div className='sm:bg-[silver] sm:rounded-l-[15px]'>
-                <img className='mr-1 h-[100px] rounded-l-[10px] max-sm:border-[4px] border-[silver] max-sm:rounded-[10px] max-sm:w-[297px] max-sm:h-[297px] max-sm:mt-[9px] ' src={product.image1} />
+                <img alt='productimg' className='mr-1 h-[100px] rounded-l-[10px] max-sm:border-[4px] border-[silver] max-sm:rounded-[10px] max-sm:w-[297px] max-sm:h-[297px] max-sm:mt-[9px] ' src={product.image1} />
                 </div>
                 <div className='max-sm:mt-[0px]'>
                 <div className='flex justify-between w-[315px] max-sm:flex-col max-sm:items-center'>

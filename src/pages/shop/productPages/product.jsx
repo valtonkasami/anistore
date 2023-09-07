@@ -14,11 +14,11 @@ export const Productz = (props) => {
         <div className='mt-10 text-2xl h-[40px] px-5 bg-[#444444] rounded-[20px] flex items-center justify-center ipad:hidden'>{title}</div>
         <div className='h-[550px] mt-9 max-sm:mt-[235px] max-ipad:mt-[265px] flex max-ipad:flex-col items-center justify-center space-x-[40px] max-ipad:space-x-0'>
         <div className='custom max-ipad:mb-10'>
-            <img className='one w-[500px] max-ipad:mb-2 h-[500px] max-big:w-[400px] max-big:h-[400px] max-sm:h-[350px] max-sm:w-[350px] ml-2 max-ipad:ml-0 rounded-[20px] border-4 border-solid border-[silver] hover:border-[orange]' src={picture} />
+            <img alt='pic1' className='one w-[500px] max-ipad:mb-2 h-[500px] max-big:w-[400px] max-big:h-[400px] max-sm:h-[350px] max-sm:w-[350px] ml-2 max-ipad:ml-0 rounded-[20px] border-4 border-solid border-[silver] hover:border-[orange]' src={picture} />
             
-                <img onMouseEnter={() => setPicture(`${image1}`)} className='w-[90px] h-[90px] max-sm:w-[100px] max-sm:h-[100px] max-big:w-[80px] max-big:h-[80px] max-ipad:w-[120px] max-ipad:h-[120px] two rounded-[20px] border-4 border-solid border-[silver] hover:border-[orange]' src={image1} />
-                <img onMouseEnter={() => setPicture(`${image2}`)} className='w-[90px] h-[90px] max-sm:w-[100px] max-sm:h-[100px] max-big:w-[80px] max-big:h-[80px] max-ipad:w-[120px] max-ipad:h-[120px] three rounded-[20px] border-4 border-solid border-[silver] hover:border-[orange]' src={image2} />
-                <img onMouseEnter={() => setPicture(`${image3}`)} className='w-[90px] h-[90px] max-sm:w-[100px] max-sm:h-[100px] max-big:w-[80px] max-big:h-[80px] max-ipad:w-[120px] max-ipad:h-[120px] four rounded-[20px] border-4 border-solid border-[silver] hover:border-[orange]' src={image3} />
+                <img alt='pic2' onMouseEnter={() => setPicture(`${image1}`)} className='w-[90px] h-[90px] max-sm:w-[100px] max-sm:h-[100px] max-big:w-[80px] max-big:h-[80px] max-ipad:w-[120px] max-ipad:h-[120px] two rounded-[20px] border-4 border-solid border-[silver] hover:border-[orange]' src={image1} />
+                <img alt='pic3' onMouseEnter={() => setPicture(`${image2}`)} className='w-[90px] h-[90px] max-sm:w-[100px] max-sm:h-[100px] max-big:w-[80px] max-big:h-[80px] max-ipad:w-[120px] max-ipad:h-[120px] three rounded-[20px] border-4 border-solid border-[silver] hover:border-[orange]' src={image2} />
+                <img alt='pic4' onMouseEnter={() => setPicture(`${image3}`)} className='w-[90px] h-[90px] max-sm:w-[100px] max-sm:h-[100px] max-big:w-[80px] max-big:h-[80px] max-ipad:w-[120px] max-ipad:h-[120px] four rounded-[20px] border-4 border-solid border-[silver] hover:border-[orange]' src={image3} />
             
         </div>
 
