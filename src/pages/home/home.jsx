@@ -29,9 +29,9 @@ export const Home = () => {
                 </h1>
                 <a href="/shop"><button className='border-4  border-[#e0ca00] hover:border-[white] drop-shadow transition ease-in-out delay-50 hover:scale-110 hover:bg-[orange] hover:text-[white] focus:outline-none  focus:ring focus:ring-[orange] bg-white text-[#e0ca00] text-5xl py-2 px-7 ipad:mt-4 max-ipad:text-7xl max-sm:text-6xl rounded-[50px]'>Shop Now</button></a>
             </div>
-            <div className='max-sm:w-[300px] max-sm:h-[300px] max-ipad:mb-[80px] drop-shadow flex justify-center items-center bg-[#e0ca00] w-[500px] h-[500px] rounded-full'>
+            <div className='max-sm:w-[300px] max-sm:h-[300px] max-ipad:mb-[80px] flex justify-center items-center bg-[#e0ca00] w-[500px] h-[500px] rounded-full'>
             <div className='max-sm:w-[220px] max-sm:h-[220px] bg-[#222222] w-[380px] h-[380px] rounded-full flex justify-center items-center'>
-            <img className='drop-shadow-2xl pr-[30px] max-sm:h-[400px] h-[600px]' src={narutoImage} alt='naruto'/>
+            <img className='pr-[30px] max-sm:h-[400px] h-[600px]' src={narutoImage} alt='naruto'/>
             </div>
             </div>
         </div>
