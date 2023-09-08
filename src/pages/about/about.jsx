@@ -8,11 +8,14 @@ export const About = () => {
     const dispatch = useDispatch()
     const cartClick = useSelector((state) => state.cartClick)
     const navbarClick = useSelector((state) => state.navbarClick)
+    const closeMenu = () => {
+      document.body.style.overflow = 'auto';
+    };
 
   return (
     <div>
-        <div onClick={() => dispatch(setNavbarClick())} className={navbarClick}></div>
-        <div onClick={() => dispatch(setCartClick())} className={cartClick}></div>
+        <div onClick={() => {dispatch(setNavbarClick()); closeMenu()}} className={navbarClick}></div>
+        <div onClick={() => {dispatch(setCartClick()); closeMenu()}} className={cartClick}></div>
         
         <div className='drop-shadow-[0_10px_10px_rgba(0,0,0,1)] bg-banner flex flex-col justify-center items-center'>
           <h1 className='text-7xl drop-shadow-[0_10px_10px_rgba(0,0,0,1)] pr-5'>#KnowUs</h1>

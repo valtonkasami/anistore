@@ -14,12 +14,14 @@ export const Product4 = () => {
     const dispatch = useDispatch()
     const cartClick = useSelector((state) => state.cartClick)
     const navbarClick = useSelector((state) => state.navbarClick)
-
-  return (
-    <div className=''>
-        
-        <div onClick={() => dispatch(setNavbarClick())} className={navbarClick}></div>
-        <div onClick={() => dispatch(setCartClick())} className={cartClick}></div>
+    const closeMenu = () => {
+        document.body.style.overflow = 'auto';
+      };
+  
+    return (
+      <div>
+          <div onClick={() => {dispatch(setNavbarClick()); closeMenu()}} className={navbarClick}></div>
+          <div onClick={() => {dispatch(setCartClick()); closeMenu()}} className={cartClick}></div>
         
         <div>
             <Productz data={PRODUCTS[3]}/>

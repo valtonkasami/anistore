@@ -12,10 +12,13 @@ export const Shop2 = () => {
     const dispatch = useDispatch()
     const cartClick = useSelector((state) => state.cartClick)
     const navbarClick = useSelector((state) => state.navbarClick)
+    const closeMenu = () => {
+        document.body.style.overflow = 'auto';
+      };
     return (
     <div className='bg-[#222222]'>
-        <div onClick={() => dispatch(setNavbarClick())} className={navbarClick}></div>
-        <div onClick={() => dispatch(setCartClick())} className={cartClick}></div>
+        <div onClick={() => {dispatch(setNavbarClick()); closeMenu()}} className={navbarClick}></div>
+        <div onClick={() => {dispatch(setCartClick()); closeMenu()}} className={cartClick}></div>
         <div className='flex flex-col items-center'>
             <h1 className='pt-[28px] pb-3 text-6xl'>#staycool</h1>
             <p className='tracking-wide text-[19px] font-sans font-light'>Save more with coupons & up to 70% off!</p>

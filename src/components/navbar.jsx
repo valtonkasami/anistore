@@ -24,12 +24,20 @@ export const Navbar = () => {
     const formattedNumberString = subtotal.toFixed(2);
     const formattedNumber = parseFloat(formattedNumberString);
 
+    const openMenu = () => {
+        document.body.style.overflow = 'hidden';
+      };
+    
+      const closeMenu = () => {
+        document.body.style.overflow = 'auto';
+      };
+
   return (
     <div>
          
     <div className='flex items-center text-2xl  h-20 pr-16 max-sm:pr-7'>
                 <div className={navbarSlide}>
-            <button onClick={() => {dispatch(setNavbarClick())}} className='transition ease-in-out delay-50 hover:text-[orange] ml-[240px] mt-3 lg:hidden'><FontAwesomeIcon className='text-3xl' icon={faRemove} /></button>
+            <button onClick={() => {dispatch(setNavbarClick()); closeMenu()}} className='transition ease-in-out delay-50 hover:text-[orange] ml-[240px] mt-3 lg:hidden'><FontAwesomeIcon className='text-3xl' icon={faRemove} /></button>
             <a href="/" className='transition ease-in-out delay-50 hover:text-[orange] w-0 pl-5 pb-3'>Home</a>
             <a href="/shop" className='transition ease-in-out delay-50 hover:text-[orange] w-0 pl-5 pb-3'>Shop</a>
             <a href="/about" className='transition ease-in-out delay-50 hover:text-[orange] w-0 pl-5 pb-3'>About</a>
@@ -53,11 +61,11 @@ export const Navbar = () => {
             <a href='/contact' className='transition ease-in-out delay-50 hover:text-[orange]'>Contact</a>
                 </div>
                 <div className='flex'>    
-            <button onClick={() => {dispatch(setCartClick(1))}}><FontAwesomeIcon className="transition ease-in-out delay-50 hover:text-[orange]" icon={faCartShopping} /></button>
-            <button onClick={() => {dispatch(setNavbarClick(1))}} className='lg:hidden ml-5 text-[27px]'><FontAwesomeIcon className='transition ease-in-out delay-50 hover:text-[orange]' icon={faBars} /></button>    
+            <button onClick={() => {dispatch(setCartClick(1)); openMenu()}}><FontAwesomeIcon className="transition ease-in-out delay-50 hover:text-[orange]" icon={faCartShopping} /></button>
+            <button onClick={() => {dispatch(setNavbarClick(1)); openMenu()}} className='lg:hidden ml-5 text-[27px]'><FontAwesomeIcon className='transition ease-in-out delay-50 hover:text-[orange]' icon={faBars} /></button>    
                 </div>
             </div>
-           {visibility && <div onClick={() => {dispatch(setCartClick(1))}} className='cursor-pointer absolute right-[55px] max-lg:right-[99px] max-sm:right-[64px] top-[15px] rounded-full bg-[orange] flex items-center justify-center h-[22px] w-[22px] font-sans font-bold text-[15px]'>{amount}</div>}
+           {visibility && <div onClick={() => {dispatch(setCartClick(1)); openMenu()}} className='cursor-pointer absolute right-[55px] max-lg:right-[99px] max-sm:right-[64px] top-[15px] rounded-full bg-[orange] flex items-center justify-center h-[22px] w-[22px] font-sans font-bold text-[15px]'>{amount}</div>}
         </div>
     </div>
     
@@ -65,7 +73,7 @@ export const Navbar = () => {
     </div>
     <div className={cartSlide}>
         <div className='flex items-center justify-between'>
-    <h1 className='ml-[30px] text-2xl py-7'>Your Shopping Cart ({amount})</h1> <button className='w-[0px] mr-[56px]' onClick={() => {dispatch(setCartClick())}}><FontAwesomeIcon className='transition ease-in-out delay-50 hover:text-[orange] text-3xl' icon={faRemove} /></button>
+    <h1 className='ml-[30px] text-2xl py-7'>Your Shopping Cart ({amount})</h1> <button className='w-[0px] mr-[56px]' onClick={() => {dispatch(setCartClick()); closeMenu()}}><FontAwesomeIcon className='transition ease-in-out delay-50 hover:text-[orange] text-3xl' icon={faRemove} /></button>
         </div>
         { visibility2 && <div className='flex flex-col items-center'>
         <div className='flex flex-col items-center justify-center mt-[50px] mb-[40px]'>
@@ -74,7 +82,7 @@ export const Navbar = () => {
             </div>
             <button onClick={() => {dispatch(setCartClick())}} className='border-solid border-[4px] border-[white] transition ease-in-out delay-50 hover:scale-110 focus:outline-none focus:ring focus:ring-[orange] text-3xl bg-[orange] h-[60px] w-[280px] rounded-full'>Continue Browsing</button>
            </div>}
-       {visibility && <div className='w-[510px h-[70vh] max-sm:h-[66vh] overflow-y-auto flex flex-col items-center'>
+       {visibility && <div className='w-[510px h-[70vh] max-sm:h-[64vh] overflow-y-auto flex flex-col items-center'>
         {products.map((product) => (
             <div key={product.id} className='bg-[white] border-solid border-4 max-sm:border-[orange] border-[silver] mb-[20px] max-sm:pb-3 w-[440px] rounded-[15px] flex max-sm:w-[330px] max-sm:h-[480px] max-sm:flex-col max-sm:items-center '>
                 <div className='sm:bg-[silver] sm:rounded-l-[15px]'>

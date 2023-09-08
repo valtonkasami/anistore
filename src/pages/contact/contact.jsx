@@ -18,11 +18,14 @@ export const Contact = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
   
+    const closeMenu = () => {
+      document.body.style.overflow = 'auto';
+    };
 
   return (
     <div>
-        <div onClick={() => dispatch(setNavbarClick())} className={navbarClick}></div>
-        <div onClick={() => dispatch(setCartClick())} className={cartClick}></div>
+        <div onClick={() => {dispatch(setNavbarClick()); closeMenu()}} className={navbarClick}></div>
+        <div onClick={() => {dispatch(setCartClick()); closeMenu()}} className={cartClick}></div>
 
         <div className='flex flex-col items-center justify-center mb-16'>
             <h2 className='text-6xl mt-10 pr-5 mb-7'>#ContactUs</h2>

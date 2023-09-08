@@ -14,12 +14,14 @@ export const Home = () => {
     const dispatch = useDispatch()
     const cartClick = useSelector((state) => state.cartClick)
     const navbarClick = useSelector((state) => state.navbarClick)
-    
-
+    const closeMenu = () => {
+        document.body.style.overflow = 'auto';
+      };
+  
     return (
-    <div className='bg-[#fbe407]'>
-        <div onClick={() => dispatch(setNavbarClick())} className={navbarClick}></div>
-        <div onClick={() => dispatch(setCartClick())} className={cartClick}></div>
+      <div className='bg-[#fbe407]'>
+          <div onClick={() => {dispatch(setNavbarClick()); closeMenu()}} className={navbarClick}></div>
+          <div onClick={() => {dispatch(setCartClick()); closeMenu()}} className={cartClick}></div>
         <div id='hero' className='pt-[70px] pb-[70px] max-sm:pb-[40px] overflow-hidden flex justify-center items-center space-x-[150px] max-xl:space-x-[50px] max-ipad:space-x-[0] max-ipad:flex-col-reverse max-ipad:text-center text-7xl max-sm:text-5xl'>
             <div className=''>
                 <h1 className='drop-shadow max-sm:text-5xl/[55px] hero-stroke max-sm:mb-[20px] max-ipad:mb-[25px] ipad:mb-[5px]'>
