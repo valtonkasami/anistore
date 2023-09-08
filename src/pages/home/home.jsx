@@ -37,8 +37,8 @@ export const Home = () => {
             </div>
             </div>
         </div>
-        <div id="section2" className='bg-[#222222] rounded-t-[60px]'>
-            <div className='text-5xl flex flex-col items-center justify-center h-[200px] max-sm:h-[150px]'>
+        <div id="section2" className='bg-[#222222] bg-[#222222] border-t-8 border-[#555555] rounded-t-[60px]'>
+            <div className='text-5xl flex flex-col items-center justify-center h-[180px] max-sm:h-[150px]'>
                 <h1 className='text-center max-sm:text-[33px]'>
                     Our Most <span className='text-[#fbe407]'>Popular</span><br/>
                     <span className='text-[#fbe407]'>Trending</span> Now Characters
