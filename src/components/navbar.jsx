@@ -80,7 +80,7 @@ export const Navbar = () => {
             <img alt='cart' className='w-[300px]' src={cart} />
             <h1 className='mb-[0px] text-2xl'>Your cart is empty</h1>
             </div>
-            <button onClick={() => {dispatch(setCartClick())}} className='border-solid border-[4px] border-[white] transition ease-in-out delay-50 hover:scale-110 focus:outline-none focus:ring focus:ring-[orange] text-3xl bg-[orange] h-[60px] w-[280px] rounded-full'>Continue Browsing</button>
+            <button onClick={() => {dispatch(setCartClick()); closeMenu()}} className='border-solid border-[4px] border-[white] transition ease-in-out delay-50 hover:scale-110 focus:outline-none focus:ring focus:ring-[orange] text-3xl bg-[orange] h-[60px] w-[280px] rounded-full'>Continue Browsing</button>
            </div>}
        {visibility && <div className='w-[510px h-[70vh] max-sm:h-[64vh] overflow-y-auto flex flex-col items-center'>
         {products.map((product) => (
