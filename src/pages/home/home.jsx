@@ -62,7 +62,7 @@ export const Home = () => {
         </div>
 
         <div className='flex justify-center'>
-        <div className='text-3xl h-16 rounded-full bg-[#444444] mt-14 flex items-center justify-center'>
+        <div className='text-3xl h-16 rounded-full bg-[#444444] mt-14 max-sm:mt-10 flex items-center justify-center'>
             <h1 className='ml-5 max-big:hidden text-[silver] cursor-pointer hover:text-[orange] mr-5'>WHY CHOOSE ANISTORE?</h1>
             <h1 className='text-[silver] max-sm:hidden max-big:ml-5 cursor-pointer hover:text-[orange] mr-5'>WHO WE ARE?</h1>
             <h1 className='max-ipad:hidden text-[silver] cursor-pointer hover:text-[orange] mr-5'>WHAT WE ARE ABOUT?</h1>
@@ -89,7 +89,7 @@ export const Home = () => {
 
         </div>
         
-        <h1 className='text-center text-[27px] mt-16'>Reviewed by People</h1>
+        <h1 className='text-center text-[27px] mt-10'>Reviewed by People</h1>
         <h1 className='text-center text-5xl mt-1'>Customer's Testimonials</h1>
         <div className='flex justify-center mt-2'><p className='w-[655px] text-center font-sans'>Discover the positive impact we've made on our costumers by reading through their testimonials. Our clients have bought and fully experienced our Figurines, and they're eager to share their positive experiences with you.</p></div>
         
