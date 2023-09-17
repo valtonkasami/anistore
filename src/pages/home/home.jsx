@@ -89,7 +89,7 @@ export const Home = () => {
 
         </div>
         
-        <h1 className='text-center text-[27px] mt-10'>Reviewed by People</h1>
+        <h1 className='text-center text-[27px] mt-14 max-sm:mt-10'>Reviewed by People</h1>
         <h1 className='text-center text-5xl mt-1'>Customer's Testimonials</h1>
         <div className='flex justify-center mt-2'><p className='w-[655px] text-center font-sans'>Discover the positive impact we've made on our costumers by reading through their testimonials. Our clients have bought and fully experienced our Figurines, and they're eager to share their positive experiences with you.</p></div>
         
